@@ -4,7 +4,7 @@ use Moose;
 use Module::Pluggable::Object;
 use namespace::clean -except => qw(meta);
 
-our $VERSION = '0.00001';
+our $VERSION = '0.00002';
 
 has search_options => (
     is => 'ro',
@@ -203,7 +203,7 @@ Extra arguments to pass to Module::Pluggable::Object to search for modules.
 
 =back
 
-=head2 C<< $self->all_modules( $main_namespace, @namespaces_to_inherit );
+=head2 C<< $self->all_modules( $main_namespace, @namespaces_to_inherit ) >>;
 
 Loads modules based on the following heuristics:
 
